@@ -1,0 +1,44 @@
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    
+    .video-title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 5;
+    }
+    
+    .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    max-width: 100%;
+    }
+    
+    .video-player {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    }
+    
+    .back-button {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 80px;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    }
+    
+    .back-button:hover{
+    color: red
+    }
