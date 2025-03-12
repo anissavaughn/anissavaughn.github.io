@@ -2,7 +2,7 @@ import women_who_empower from './women-who-empower.png';
 import aiep from './aiep.png';
 import roblox from './roblox.png';
 import soon from './soon.png';
-import tallawah_archives from './tallawah-archives.png';
+import tallawah from './tallawah.png';
 
 const cards_data = [
     {
@@ -24,7 +24,7 @@ const cards_data = [
     },
     {
         id: 4,
-        image:tallawah_archives,
+        image:tallawah,
         name:"Tallawah Archives"
     },
     {
