@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import './Player.css'; 
+import './Player.css';
+import YouTube from "react-youtube";
 
 const Player = () => {
   const location = useLocation();
@@ -11,6 +12,19 @@ const Player = () => {
     navigate(-1);
   };
 
+  const opts = {
+    height: '790',
+    width: '1040',
+    playerVars: {
+      autoplay: 1,
+      controls: 1,
+    },
+  };
+
+  const _onReady = (event) => {
+    event.target.pauseVideo();
+  };
+
   return (
     <div>
       <h1>Now Playing</h1>
@@ -19,11 +33,7 @@ const Player = () => {
           <div className="back-button" onClick={goBack}>
             &#8592;
           </div>
-
-          <video className="video-player" controls autoplay>
-            <source src={videoSrc} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <YouTube videoId={videoSrc} opts={opts} onReady={_onReady} id="video" />
         </div>
       ) : (
         <p>No video available.</p>

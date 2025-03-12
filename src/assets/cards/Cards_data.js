@@ -1,20 +1,21 @@
 import women_who_empower from './women-who-empower.png';
 import aiep from './aiep.png';
 import roblox from './roblox.png';
-import soon from './soon.png'
+import soon from './soon.png';
+import tallawah_archives from './tallawah-archives.png';
 
 const cards_data = [
     {
         id: 1,
         image:women_who_empower,
         name:"DeepYaad Presentation for Women Who Empower Award",
-        videoSrc: "/videos/women who empower.mp4"
+        videoSrc: "hEFzIknMlUI"
     },
     {
         id: 2,
         image:aiep,
         name:"AI-EP Presentation for NCWIT AiC Collegiate Award",
-        videoSrc: "/videos/aiep.mp4"
+        videoSrc: "sL7jts6fKRQ"
     },
     {
         id: 3,
@@ -23,8 +24,8 @@ const cards_data = [
     },
     {
         id: 4,
-        image:soon,
-        name:"Coming Soon"
+        image:tallawah_archives,
+        name:"Tallawah Archives"
     },
     {
         id: 5,
